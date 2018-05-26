@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="53dp"
+        android:layout_height="24dp"
+        android:layout_marginBottom="7dp"
+        android:layout_marginEnd="165dp"
+        android:layout_marginLeft="166dp"
+        android:layout_marginRight="165dp"
+        android:layout_marginStart="166dp"
+        android:layout_marginTop="16dp"
+        android:text="Media"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="283dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginStart="16dp"
+        android:onClick="audioCick"
+        android:text="Музика"
+        app:layout_constraintBottom_toTopOf="@+id/video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/video"
+        android:layout_width="292dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="352dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        android:onClick="videoCick"
+        android:text="Відео"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+</android.support.constraint.ConstraintLayout>
